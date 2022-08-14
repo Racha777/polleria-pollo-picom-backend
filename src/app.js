@@ -19,6 +19,7 @@ app.get('/',(req,res)=>{
 })
 
 //rutas
+app.use('/platos',require('./routes/plato.route'));
 
 //middlewares de errores
 
