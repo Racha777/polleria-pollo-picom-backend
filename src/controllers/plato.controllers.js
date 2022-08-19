@@ -9,8 +9,9 @@ platoController.getAll=async (req,res)=>{
 
 platoController.create=async (req,res)=>{
     try{
-        const {nombre,precio,imagen}=req.body;
+        const {id,nombre,precio,imagen}=req.body;
         const nuevoPlato=new platoModel({
+            id,
             nombre,
             precio,
             imagen

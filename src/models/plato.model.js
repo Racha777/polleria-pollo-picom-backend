@@ -2,6 +2,10 @@ const mongoose=require('mongoose');
 const Schema=mongoose.Schema;
 
 const PlatoSchema=new Schema({
+    id:{
+        required:true,
+        type:Number,
+    },
     nombre:{
         required:true,
         type:String
