@@ -1,5 +1,5 @@
-const express=require('express');
-const {config}=require('./config');
+const express = require('express');
+const {config} = require('./config');
 
 //Importamos middlewares
 const cors=require('cors');
@@ -19,6 +19,9 @@ app.get('/',(req,res)=>{
 })
 
 //rutas
+app.use('/usuario',require('./routes/usuario.routes'));
+app.use('/auth',require('./routes/auth.routes'));
+app.use('/pedidos',require('./routes/pedidos.routes'));
 
 //middlewares de errores
 
