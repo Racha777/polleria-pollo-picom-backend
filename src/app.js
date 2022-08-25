@@ -19,6 +19,7 @@ app.get('/',(req,res)=>{
 })
 
 //rutas
+app.use('/reserva',require('./routes/reserva.route'));
 
 //middlewares de errores
 
